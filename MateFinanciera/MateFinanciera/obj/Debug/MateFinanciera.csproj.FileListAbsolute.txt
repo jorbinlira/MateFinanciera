@@ -1,8 +1,10 @@
 C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\bin\Debug\MateFinanciera.exe.config
 C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\bin\Debug\MateFinanciera.exe
 C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\bin\Debug\MateFinanciera.pdb
-C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.Form1.resources
 C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.Properties.Resources.resources
 C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.csproj.GenerateResource.Cache
 C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.exe
 C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.pdb
+C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.csprojResolveAssemblyReference.cache
+C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.Principal.resources
+C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.TmarMixta.resources
