@@ -9,3 +9,4 @@ C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debu
 C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.Principal.resources
 C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.TmarMixta.resources
 C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.Calendario_de_pagos.resources
+C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.TMAR.resources

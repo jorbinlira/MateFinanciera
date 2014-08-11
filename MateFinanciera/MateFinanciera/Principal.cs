@@ -44,5 +44,16 @@ namespace MateFinanciera
 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TMAR abrir = new TMAR();
+            abrir.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
