@@ -33,5 +33,16 @@ namespace MateFinanciera
 
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+
+            Calendario_de_pagos abrir = new Calendario_de_pagos();
+
+            abrir.Show();
+
+
+        }
     }
 }
