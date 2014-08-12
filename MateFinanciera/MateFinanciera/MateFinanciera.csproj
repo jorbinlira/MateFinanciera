@@ -50,6 +50,18 @@
     <Compile Include="Calendario de pagos .Designer.cs">
       <DependentUpon>Calendario de pagos .cs</DependentUpon>
     </Compile>
+    <Compile Include="FlujoNetodeEfectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlujoNetodeEfectivo.Designer.cs">
+      <DependentUpon>FlujoNetodeEfectivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InversionFija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InversionFija.Designer.cs">
+      <DependentUpon>InversionFija.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +84,12 @@
     </Compile>
     <EmbeddedResource Include="Calendario de pagos .resx">
       <DependentUpon>Calendario de pagos .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlujoNetodeEfectivo.resx">
+      <DependentUpon>FlujoNetodeEfectivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InversionFija.resx">
+      <DependentUpon>InversionFija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
