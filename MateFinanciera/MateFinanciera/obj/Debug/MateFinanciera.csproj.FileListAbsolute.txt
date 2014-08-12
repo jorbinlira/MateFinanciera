@@ -27,3 +27,4 @@ C:\Users\user\Documents\GitHub\MateFinanciera\MateFinanciera\MateFinanciera\obj\
 C:\Users\user\Documents\GitHub\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.TmarMixta.resources
 C:\Users\user\Documents\GitHub\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.csproj.GenerateResource.Cache
 C:\Users\user\Documents\GitHub\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.TIR.resources
+C:\Users\MARIOLIRA\Desktop\MateFinanciera\MateFinanciera\MateFinanciera\obj\Debug\MateFinanciera.TIR.resources

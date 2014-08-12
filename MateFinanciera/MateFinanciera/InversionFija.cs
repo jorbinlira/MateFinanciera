@@ -56,9 +56,18 @@ namespace MateFinanciera
            if (cbedificios.SelectedItem != null && cbtransporte.SelectedItem != null && cbmaquinaria.SelectedItem != null){
 
 
-               if (montoedificios.Text != null && montomaquinaria.Text != null && montotransporte.Text != null && montoterreno != null && resiedificios.Text != null &&
-                   resimaquinaria.Text != null && resitransporte.Text != null)
+               if (montoedificios.Text.Replace("_","").Equals("") || montomaquinaria.Text.Replace("_","").Equals("")  || montotransporte.Text.Replace("_","").Equals("") || montoterreno.Text.Replace("_","").Equals("") || resiedificios.Text.Replace("_","").Equals("") ||
+                   resimaquinaria.Text.Replace("_","").Equals("") || resitransporte.Text.Replace("_","").Equals(""))
                {
+
+
+                   MessageBox.Show(" por favor llene todos los campos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+               }
+               else {
+
+                  
+
 
 
                    string tipoedificios = cbedificios.SelectedItem.ToString();
@@ -163,18 +172,13 @@ namespace MateFinanciera
                    this.Dispose();
 
                }
-               else {
-
-                   MessageBox.Show(" por favor llene todos los campos","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
-
-               }
 
            }
 
            else {
 
                MessageBox.Show("debe especificar el tipo de los activos ","ERROR",MessageBoxButtons.OK , MessageBoxIcon.Error);
-               this.Dispose();
+               
            }
 
 

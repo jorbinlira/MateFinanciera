@@ -64,6 +64,7 @@ namespace MateFinanciera
 
         private void button5_Click(object sender, EventArgs e)
         {
+
             TIR a = new TIR();
             a.Show();
         }
