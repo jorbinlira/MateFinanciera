@@ -1,6 +1,6 @@
 ﻿namespace MateFinanciera
 {
-    partial class FlujoNetodeEfectivo
+    partial class FNE
     {
         /// <summary>
         /// Required designer variable.
@@ -29,58 +29,61 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.inversionfijtotal = new System.Windows.Forms.MaskedTextBox();
             this.ingreanuales = new System.Windows.Forms.MaskedTextBox();
-            this.cbcrecimientoingre = new System.Windows.Forms.ComboBox();
             this.costoanuales = new System.Windows.Forms.MaskedTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.creingrecan = new System.Windows.Forms.MaskedTextBox();
-            this.cbcrecimientocos = new System.Windows.Forms.ComboBox();
-            this.crecoscan = new System.Windows.Forms.MaskedTextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.inversiondiftotal = new System.Windows.Forms.MaskedTextBox();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
             this.Restoinversion = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.inversiontotal = new System.Windows.Forms.TextBox();
-            this.creingrepor = new System.Windows.Forms.MaskedTextBox();
-            this.crecospor = new System.Windows.Forms.MaskedTextBox();
             this.depreciacion = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valorresidual = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Tiempo = new System.Windows.Forms.MaskedTextBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(95, 45);
+            this.label1.Location = new System.Drawing.Point(82, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingresos anuales =";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Crecimiento de los ingresos =";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(102, 115);
+            this.label3.Location = new System.Drawing.Point(89, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 13);
             this.label3.TabIndex = 2;
@@ -89,7 +92,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(89, 182);
+            this.label4.Location = new System.Drawing.Point(86, 115);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 13);
             this.label4.TabIndex = 3;
@@ -97,7 +100,7 @@
             // 
             // inversionfijtotal
             // 
-            this.inversionfijtotal.Location = new System.Drawing.Point(208, 179);
+            this.inversionfijtotal.Location = new System.Drawing.Point(208, 112);
             this.inversionfijtotal.Mask = "0000000000000000";
             this.inversionfijtotal.Name = "inversionfijtotal";
             this.inversionfijtotal.Size = new System.Drawing.Size(109, 20);
@@ -105,81 +108,19 @@
             // 
             // ingreanuales
             // 
-            this.ingreanuales.Location = new System.Drawing.Point(208, 42);
+            this.ingreanuales.Location = new System.Drawing.Point(208, 46);
             this.ingreanuales.Mask = "000000000000000";
             this.ingreanuales.Name = "ingreanuales";
             this.ingreanuales.Size = new System.Drawing.Size(108, 20);
             this.ingreanuales.TabIndex = 5;
             // 
-            // cbcrecimientoingre
-            // 
-            this.cbcrecimientoingre.FormattingEnabled = true;
-            this.cbcrecimientoingre.Items.AddRange(new object[] {
-            "Cantidad",
-            "Porcentual"});
-            this.cbcrecimientoingre.Location = new System.Drawing.Point(208, 75);
-            this.cbcrecimientoingre.Name = "cbcrecimientoingre";
-            this.cbcrecimientoingre.Size = new System.Drawing.Size(109, 21);
-            this.cbcrecimientoingre.TabIndex = 6;
-            this.cbcrecimientoingre.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
             // costoanuales
             // 
-            this.costoanuales.Location = new System.Drawing.Point(208, 108);
+            this.costoanuales.Location = new System.Drawing.Point(207, 82);
             this.costoanuales.Mask = "00000000000000";
             this.costoanuales.Name = "costoanuales";
             this.costoanuales.Size = new System.Drawing.Size(109, 20);
             this.costoanuales.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(55, 148);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(136, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Crecimiento de los costos =";
-            // 
-            // creingrecan
-            // 
-            this.creingrecan.Enabled = false;
-            this.creingrecan.Location = new System.Drawing.Point(333, 75);
-            this.creingrecan.Mask = "000000000000";
-            this.creingrecan.Name = "creingrecan";
-            this.creingrecan.Size = new System.Drawing.Size(61, 20);
-            this.creingrecan.TabIndex = 9;
-            // 
-            // cbcrecimientocos
-            // 
-            this.cbcrecimientocos.FormattingEnabled = true;
-            this.cbcrecimientocos.Items.AddRange(new object[] {
-            "Cantidad",
-            "Porcentual"});
-            this.cbcrecimientocos.Location = new System.Drawing.Point(208, 145);
-            this.cbcrecimientocos.Name = "cbcrecimientocos";
-            this.cbcrecimientocos.Size = new System.Drawing.Size(108, 21);
-            this.cbcrecimientocos.TabIndex = 10;
-            this.cbcrecimientocos.SelectedIndexChanged += new System.EventHandler(this.cbcrecimientocos_SelectedIndexChanged);
-            // 
-            // crecoscan
-            // 
-            this.crecoscan.Enabled = false;
-            this.crecoscan.Location = new System.Drawing.Point(333, 145);
-            this.crecoscan.Mask = "0000000000000";
-            this.crecoscan.Name = "crecoscan";
-            this.crecoscan.Size = new System.Drawing.Size(61, 20);
-            this.crecoscan.TabIndex = 11;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(333, 182);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(113, 13);
-            this.linkLabel1.TabIndex = 12;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "+ Distribuir la Inversion";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label6
             // 
@@ -197,16 +138,6 @@
             this.inversiondiftotal.Name = "inversiondiftotal";
             this.inversiondiftotal.Size = new System.Drawing.Size(108, 20);
             this.inversiondiftotal.TabIndex = 14;
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(334, 218);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(112, 13);
-            this.linkLabel2.TabIndex = 15;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "+ Distribuir la inversion";
             // 
             // label7
             // 
@@ -233,6 +164,7 @@
             this.button1.TabIndex = 18;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -260,28 +192,10 @@
             this.inversiontotal.Size = new System.Drawing.Size(146, 20);
             this.inversiontotal.TabIndex = 21;
             // 
-            // creingrepor
-            // 
-            this.creingrepor.Enabled = false;
-            this.creingrepor.Location = new System.Drawing.Point(401, 75);
-            this.creingrepor.Mask = "00.00";
-            this.creingrepor.Name = "creingrepor";
-            this.creingrepor.Size = new System.Drawing.Size(45, 20);
-            this.creingrepor.TabIndex = 22;
-            // 
-            // crecospor
-            // 
-            this.crecospor.Enabled = false;
-            this.crecospor.Location = new System.Drawing.Point(401, 145);
-            this.crecospor.Mask = "00.00";
-            this.crecospor.Name = "crecospor";
-            this.crecospor.Size = new System.Drawing.Size(47, 20);
-            this.crecospor.TabIndex = 23;
-            // 
             // depreciacion
             // 
             this.depreciacion.Enabled = false;
-            this.depreciacion.Location = new System.Drawing.Point(477, 179);
+            this.depreciacion.Location = new System.Drawing.Point(208, 179);
             this.depreciacion.Name = "depreciacion";
             this.depreciacion.Size = new System.Drawing.Size(100, 20);
             this.depreciacion.TabIndex = 24;
@@ -290,58 +204,195 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1});
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12,
+            this.Column13,
+            this.Column14,
+            this.Column15,
+            this.Column16,
+            this.Column17,
+            this.Column18,
+            this.Column19});
             this.dataGridView1.Location = new System.Drawing.Point(12, 426);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(622, 227);
             this.dataGridView1.TabIndex = 25;
+            // 
+            // Valorresidual
+            // 
+            this.Valorresidual.Enabled = false;
+            this.Valorresidual.Location = new System.Drawing.Point(208, 148);
+            this.Valorresidual.Name = "Valorresidual";
+            this.Valorresidual.Size = new System.Drawing.Size(100, 20);
+            this.Valorresidual.TabIndex = 26;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(89, 148);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(99, 13);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Valor residual total :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(95, 182);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(76, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Depreciacion :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(88, 9);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(103, 13);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Plazo del proyecto =";
+            // 
+            // Tiempo
+            // 
+            this.Tiempo.Location = new System.Drawing.Point(208, 6);
+            this.Tiempo.Mask = "00";
+            this.Tiempo.Name = "Tiempo";
+            this.Tiempo.Size = new System.Drawing.Size(37, 20);
+            this.Tiempo.TabIndex = 30;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Concepto";
             this.Column1.Name = "Column1";
             // 
-            // Valorresidual
+            // Column2
             // 
-            this.Valorresidual.Enabled = false;
-            this.Valorresidual.Location = new System.Drawing.Point(477, 141);
-            this.Valorresidual.Name = "Valorresidual";
-            this.Valorresidual.Size = new System.Drawing.Size(100, 20);
-            this.Valorresidual.TabIndex = 26;
+            this.Column2.HeaderText = ".";
+            this.Column2.Name = "Column2";
             // 
-            // FlujoNetodeEfectivo
+            // Column3
+            // 
+            this.Column3.HeaderText = ".";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = ".";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = ".";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = ".";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = ".";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = ".";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = ".";
+            this.Column9.Name = "Column9";
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = ".";
+            this.Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = ".";
+            this.Column11.Name = "Column11";
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = ".";
+            this.Column12.Name = "Column12";
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = ".";
+            this.Column13.Name = "Column13";
+            // 
+            // Column14
+            // 
+            this.Column14.HeaderText = ".";
+            this.Column14.Name = "Column14";
+            // 
+            // Column15
+            // 
+            this.Column15.HeaderText = ".";
+            this.Column15.Name = "Column15";
+            // 
+            // Column16
+            // 
+            this.Column16.HeaderText = ".";
+            this.Column16.Name = "Column16";
+            // 
+            // Column17
+            // 
+            this.Column17.HeaderText = ".";
+            this.Column17.Name = "Column17";
+            // 
+            // Column18
+            // 
+            this.Column18.HeaderText = ".";
+            this.Column18.Name = "Column18";
+            // 
+            // Column19
+            // 
+            this.Column19.HeaderText = ".";
+            this.Column19.Name = "Column19";
+            // 
+            // FNE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(646, 665);
+            this.Controls.Add(this.Tiempo);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.Valorresidual);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.depreciacion);
-            this.Controls.Add(this.crecospor);
-            this.Controls.Add(this.creingrepor);
             this.Controls.Add(this.inversiontotal);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Restoinversion);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.inversiondiftotal);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.crecoscan);
-            this.Controls.Add(this.cbcrecimientocos);
-            this.Controls.Add(this.creingrecan);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.costoanuales);
-            this.Controls.Add(this.cbcrecimientoingre);
             this.Controls.Add(this.ingreanuales);
             this.Controls.Add(this.inversionfijtotal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FlujoNetodeEfectivo";
+            this.Name = "FNE";
             this.Text = "FlujoNetodeEfectivo";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -352,32 +403,44 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.MaskedTextBox inversionfijtotal;
         private System.Windows.Forms.MaskedTextBox ingreanuales;
-        private System.Windows.Forms.ComboBox cbcrecimientoingre;
         private System.Windows.Forms.MaskedTextBox costoanuales;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MaskedTextBox creingrecan;
-        private System.Windows.Forms.ComboBox cbcrecimientocos;
-        private System.Windows.Forms.MaskedTextBox crecoscan;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.MaskedTextBox inversiondiftotal;
-        private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.MaskedTextBox Restoinversion;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.TextBox inversiontotal;
-        private System.Windows.Forms.MaskedTextBox creingrepor;
-        private System.Windows.Forms.MaskedTextBox crecospor;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         public System.Windows.Forms.TextBox depreciacion;
         public System.Windows.Forms.TextBox Valorresidual;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.MaskedTextBox Tiempo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
     }
 }

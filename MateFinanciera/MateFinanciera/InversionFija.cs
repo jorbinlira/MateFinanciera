@@ -162,14 +162,21 @@ namespace MateFinanciera
 
                    residual = resiedi + residtrans + resimaqui;
 
-                   FlujoNetodeEfectivo add = new FlujoNetodeEfectivo();
+                   FNE add = new FNE();
+
+   
+
 
                    add.depreciacion.Text = totaldepre.ToString();
 
+                   add.inversionfijtotal.ReadOnly = true;
                    add.inversionfijtotal.Text = inverfijt.ToString();
 
                    add.Valorresidual.Text = residual.ToString();
-                   this.Dispose();
+
+                   add.Show();
+
+                   
 
                }
 

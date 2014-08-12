@@ -58,8 +58,11 @@ namespace MateFinanciera
 
         private void button7_Click(object sender, EventArgs e)
         {
-            FlujoNetodeEfectivo abrir = new FlujoNetodeEfectivo();
-            abrir.Show();
+            //InversionFija abrir = new InversionFija();
+            //abrir.Show();
+
+            FNE abri = new FNE();
+            abri.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)

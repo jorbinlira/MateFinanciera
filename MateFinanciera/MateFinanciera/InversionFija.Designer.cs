@@ -145,7 +145,7 @@
             // montotransporte
             // 
             this.montotransporte.Location = new System.Drawing.Point(353, 101);
-            this.montotransporte.Mask = "0000000000000";
+            this.montotransporte.Mask = "00000000000000";
             this.montotransporte.Name = "montotransporte";
             this.montotransporte.Size = new System.Drawing.Size(121, 20);
             this.montotransporte.TabIndex = 10;
@@ -153,7 +153,7 @@
             // montomaquinaria
             // 
             this.montomaquinaria.Location = new System.Drawing.Point(353, 157);
-            this.montomaquinaria.Mask = "00000000000";
+            this.montomaquinaria.Mask = "00000000000000";
             this.montomaquinaria.Name = "montomaquinaria";
             this.montomaquinaria.Size = new System.Drawing.Size(121, 20);
             this.montomaquinaria.TabIndex = 11;
@@ -188,7 +188,7 @@
             // montoterreno
             // 
             this.montoterreno.Location = new System.Drawing.Point(353, 209);
-            this.montoterreno.Mask = "0000000000000000";
+            this.montoterreno.Mask = "00000000000000";
             this.montoterreno.Name = "montoterreno";
             this.montoterreno.Size = new System.Drawing.Size(121, 20);
             this.montoterreno.TabIndex = 15;
@@ -215,7 +215,7 @@
             // resiedificios
             // 
             this.resiedificios.Location = new System.Drawing.Point(525, 45);
-            this.resiedificios.Mask = "000000000000000";
+            this.resiedificios.Mask = "000000000000";
             this.resiedificios.Name = "resiedificios";
             this.resiedificios.Size = new System.Drawing.Size(120, 20);
             this.resiedificios.TabIndex = 18;
@@ -223,7 +223,7 @@
             // resitransporte
             // 
             this.resitransporte.Location = new System.Drawing.Point(525, 101);
-            this.resitransporte.Mask = "00000000000000000";
+            this.resitransporte.Mask = "000000000000";
             this.resitransporte.Name = "resitransporte";
             this.resitransporte.Size = new System.Drawing.Size(120, 20);
             this.resitransporte.TabIndex = 19;
@@ -231,7 +231,7 @@
             // resimaquinaria
             // 
             this.resimaquinaria.Location = new System.Drawing.Point(525, 157);
-            this.resimaquinaria.Mask = "00000000000";
+            this.resimaquinaria.Mask = "000000000000";
             this.resimaquinaria.Name = "resimaquinaria";
             this.resimaquinaria.Size = new System.Drawing.Size(120, 20);
             this.resimaquinaria.TabIndex = 20;
