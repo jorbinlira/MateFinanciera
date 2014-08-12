@@ -70,6 +70,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TIR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TIR.Designer.cs">
+      <DependentUpon>TIR.cs</DependentUpon>
+    </Compile>
     <Compile Include="TMAR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TIR.resx">
+      <DependentUpon>TIR.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TMAR.resx">
       <DependentUpon>TMAR.cs</DependentUpon>
     </EmbeddedResource>

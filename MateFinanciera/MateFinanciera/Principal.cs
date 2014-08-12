@@ -61,5 +61,11 @@ namespace MateFinanciera
             FlujoNetodeEfectivo abrir = new FlujoNetodeEfectivo();
             abrir.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            TIR a = new TIR();
+            a.Show();
+        }
     }
 }
