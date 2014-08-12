@@ -53,117 +53,127 @@ namespace MateFinanciera
 
            
 
-           if (cbedificios.SelectedItem != null && cbtransporte.SelectedItem != null && cbmaquinaria.SelectedItem != null)
-           {
+           if (cbedificios.SelectedItem != null && cbtransporte.SelectedItem != null && cbmaquinaria.SelectedItem != null){
 
 
-               string tipoedificios = cbedificios.SelectedItem.ToString();
-               string tipotransporte = cbtransporte.SelectedItem.ToString();
-               string tipomaquinaria = cbmaquinaria.SelectedItem.ToString();
-
-
-               int vidautil=0;
-               int vidautil2=0;
-               int vidautil3=0;
-
-               float totaldepre=0;
-               double inverfijt = 0;
-               double residual = 0;
-
-               if (tipoedificios.Equals("Industriales"))
+               if (montoedificios.Text != null && montomaquinaria.Text != null && montotransporte.Text != null && montoterreno != null && resiedificios.Text != null &&
+                   resimaquinaria.Text != null && resitransporte.Text != null)
                {
 
-                   vidautil = 10;
+
+                   string tipoedificios = cbedificios.SelectedItem.ToString();
+                   string tipotransporte = cbtransporte.SelectedItem.ToString();
+                   string tipomaquinaria = cbmaquinaria.SelectedItem.ToString();
+
+
+                   int vidautil = 0;
+                   int vidautil2 = 0;
+                   int vidautil3 = 0;
+
+                   float totaldepre = 0;
+                   double inverfijt = 0;
+                   double residual = 0;
+
+                   if (tipoedificios.Equals("Industriales"))
+                   {
+
+                       vidautil = 10;
+
+                   }
+                   else if (tipoedificios.Equals("Comerciales"))
+                   {
+
+                       vidautil = 20;
+                   }
+                   else if (tipoedificios.Equals("Residencia"))
+                   {
+
+                       vidautil = 10;
+                   }
+
+                   double montoedi = Convert.ToDouble(montoedificios.Text);
+                   double resiedi = Convert.ToDouble(resiedificios.Text);
+
+                   float depreedi = depreciacion(montoedi, resiedi, vidautil);
+
+
+
+                   if (tipotransporte.Equals("Colectivo o de carga"))
+                   {
+                       vidautil2 = 5;
+
+
+                   }
+                   else if (tipotransporte.Equals("vehiculos de empresas"))
+                   {
+                       vidautil2 = 3;
+
+                   }
+                   else if (tipotransporte.Equals("otros equipos de transporte"))
+                   {
+
+                       vidautil2 = 8;
+                   }
+
+                   double montotrans = Convert.ToDouble(montotransporte.Text);
+                   double residtrans = Convert.ToDouble(resitransporte.Text);
+
+                   float depretranspor = depreciacion(montotrans, residtrans, vidautil2);
+
+
+
+                   if (tipomaquinaria.Equals("Industriales en general"))
+                   {
+                       vidautil3 = 7;
+
+                   }
+                   else if (tipomaquinaria.Equals("Agricolas"))
+                   {
+                       vidautil3 = 5;
+
+                   }
+                   else if (tipomaquinaria.Equals("otros bienes inmuebles"))
+                   {
+
+                       vidautil3 = 5;
+
+                   }
+
+                   double montomaqui = Convert.ToDouble(montomaquinaria.Text);
+                   double resimaqui = Convert.ToDouble(resimaquinaria.Text);
+
+                   float depremaqui = depreciacion(montomaqui, resimaqui, vidautil3);
+
+
+                   totaldepre = depreedi + depretranspor + depremaqui;
+
+                   double terreno = Convert.ToDouble(montoterreno.Text);
+
+                   inverfijt = montoedi + montotrans + montomaqui + terreno;
+
+                   residual = resiedi + residtrans + resimaqui;
+
+                   FlujoNetodeEfectivo add = new FlujoNetodeEfectivo();
+
+                   add.depreciacion.Text = totaldepre.ToString();
+
+                   add.inversionfijtotal.Text = inverfijt.ToString();
+
+                   add.Valorresidual.Text = residual.ToString();
+                   this.Dispose();
 
                }
-               else if (tipoedificios.Equals("Comerciales"))
-               {
+               else {
 
-                   vidautil = 20;
-               }
-               else if (tipoedificios.Equals("Residencia"))
-               {
-
-                   vidautil = 10;
-               }
-
-              double montoedi= Convert.ToDouble( montoedificios.Text);
-              double resiedi = Convert.ToDouble(resiedificios.Text);
-
-              float depreedi = depreciacion(montoedi,resiedi,vidautil);
-
-
-
-               if (tipotransporte.Equals("Colectivo o de carga"))
-               { 
-                   vidautil2 =5;
-
+                   MessageBox.Show(" por favor llene todos los campos","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
 
                }
-               else if (tipotransporte.Equals("vehiculos de empresas"))
-               {
-                   vidautil2 = 3;
-
-               }
-               else if (tipotransporte.Equals("otros equipos de transporte"))
-               {
-
-                   vidautil2 = 8;
-               }
-
-               double montotrans = Convert.ToDouble( montotransporte.Text);
-               double residtrans = Convert.ToDouble(resitransporte.Text);
-
-               float depretranspor = depreciacion(montotrans,residtrans,vidautil2);
-
-
-
-               if (tipomaquinaria.Equals("Industriales en general"))
-               {
-                   vidautil3 = 7;
-
-               }
-               else if (tipomaquinaria.Equals("Agricolas"))
-               {
-                   vidautil3 = 5;
-
-               }
-               else if (tipomaquinaria.Equals("otros bienes inmuebles"))
-               {
-
-                   vidautil3 = 5;
-
-               }
-
-               double montomaqui = Convert.ToDouble(montomaquinaria.Text);
-               double resimaqui = Convert.ToDouble(resimaquinaria.Text);
-
-               float depremaqui = depreciacion(montomaqui,resimaqui,vidautil3);
-
-
-               totaldepre = depreedi + depretranspor + depremaqui;
-
-               double terreno = Convert.ToDouble(montoterreno.Text);
-
-               inverfijt = montoedi + montotrans + montomaqui + terreno;
-
-               residual = resiedi + residtrans + resimaqui;
-
-               FlujoNetodeEfectivo add = new FlujoNetodeEfectivo();
-
-               add.depreciacion.Text = totaldepre.ToString();
-
-               add.inversionfijtotal.Text = inverfijt.ToString();
-
-               add.Valorresidual.Text = residual.ToString();
-               this.Dispose();
-
 
            }
 
            else {
 
-               MessageBox.Show("debe especificar el tipo de los activos ");
+               MessageBox.Show("debe especificar el tipo de los activos ","ERROR",MessageBoxButtons.OK , MessageBoxIcon.Error);
                this.Dispose();
            }
 
